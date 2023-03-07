@@ -11,6 +11,8 @@ import UIKit
 class ContactMod{
     
     
+    
+    
     //MARK: Objects
     static let contactMod = ContactMod()
     var contactStaticData = ContactStaticData()
@@ -19,18 +21,22 @@ class ContactMod{
     //MARK: Properties
     var index: Int = 0
     var contactDataArray:[Contact] = []
-    var sortContacts = SortContacts()
+    var sortContacts = SortContacts.sortContacts
     private init() {}
     
-   
+    
     
     
     // Add Contact
     func addContact(firstName:String,lastName:String, number:[String],company:String){
+       
         let contact = Contact(firstName: firstName,lastName: lastName, number: number, company: company )
         contactDataArray.insert(contact, at: 0)
         
     }
+    
+    
+    
     
     // Update Contact
     
@@ -43,34 +49,32 @@ class ContactMod{
     
     // Delete Contact
     func deleteContact(indexPath: IndexPath){
-        let contact = contactDataArray.remove(at: indexPath.row)
+        
+        
+        guard let contact = sortContacts.sortedContactList[sortContacts.sectionTitles[indexPath.section]]?.remove(at: indexPath.row) else {
+            fatalError("error")
+        }
+//        let contact = sortContacts.sortedContactList[sort]
+        
+        // removing elements from the data
+        // so no element is regenerated when a new value
+        // is added
         
         for i in 0..<contactDataArray.count {
-            if (contact.number == contactDataArray[i].number && contact.firstName == contactDataArray[i].firstName && contact.lastName == contactDataArray[i].lastName) {
+            if (contact.fullName == contactDataArray[i].fullName) {
                 contactDataArray.remove(at: i)
                 break
             }
-            
-            sortContacts.createSectionTitles(contactMod: ContactMod.contactMod)
-//
         }
         
+        
+        // remove entire key from sortContactList
+        if sortContacts.sortedContactList[sortContacts.sectionTitles[indexPath.section]]?.count == 0{
+            sortContacts.sortedContactList.removeValue(forKey: sortContacts.sectionTitles[indexPath.section])
+        }
+        
+        sortContacts.createSectionTitles(contactMod: ContactMod.contactMod)
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
@@ -83,4 +87,5 @@ class ContactMod{
         }
         
     }
+    
 }

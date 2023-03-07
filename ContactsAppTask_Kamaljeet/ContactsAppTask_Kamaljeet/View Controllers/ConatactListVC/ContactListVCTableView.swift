@@ -36,7 +36,7 @@ extension ContactListVC: UITableViewDelegate, UITableViewDataSource{
         let contact = sortedContactListTemp[sectionTitlesTemp[indexPath.section]]?[indexPath.row]
         cell.cellLabel?.text = {
                                 if contact?.fullName == "#" {
-                                    return (contact?.number[0])!
+                                    return contact?.number[0] ?? ""
                                 }
                                 return contact?.fullName
                             }()
@@ -82,16 +82,5 @@ extension ContactListVC: UITableViewDelegate, UITableViewDataSource{
 }
 
 
-//MARK: Prepare Segue
 
-extension ContactListVC{
-   
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        guard let vc = segue.destination as? ContactDetailsVC else {
-            return
-        }
-        vc.data = sender as? (Contact, IndexPath)
-         
-    }
-}
+

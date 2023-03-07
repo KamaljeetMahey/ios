@@ -11,6 +11,10 @@
 		8FBB71EF29B1D89500483A3B /* ContactListVCTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB71EE29B1D89500483A3B /* ContactListVCTableView.swift */; };
 		8FBB71F129B1D8FC00483A3B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB71F029B1D8FC00483A3B /* SearchBar.swift */; };
 		8FBB71F329B2428E00483A3B /* DeleteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB71F229B2428E00483A3B /* DeleteCell.swift */; };
+		8FC08AF729B5F8080011F3EC /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC08AF629B5F8080011F3EC /* DetailCell.swift */; };
+		8FC08AF929B5F94E0011F3EC /* ContactDetailsVCTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC08AF829B5F94E0011F3EC /* ContactDetailsVCTableView.swift */; };
+		8FC08AFB29B614F80011F3EC /* AddContactDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC08AFA29B614F80011F3EC /* AddContactDelegate.swift */; };
+		8FC08AFE29B61C060011F3EC /* SaveContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC08AFD29B61C060011F3EC /* SaveContact.swift */; };
 		8FC538FB29B063CA005C250A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC538FA29B063CA005C250A /* AppDelegate.swift */; };
 		8FC538FD29B063CA005C250A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC538FC29B063CA005C250A /* SceneDelegate.swift */; };
 		8FC538FF29B063CA005C250A /* ContactListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC538FE29B063CA005C250A /* ContactListVC.swift */; };
@@ -34,6 +38,10 @@
 		8FBB71EE29B1D89500483A3B /* ContactListVCTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListVCTableView.swift; sourceTree = "<group>"; };
 		8FBB71F029B1D8FC00483A3B /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		8FBB71F229B2428E00483A3B /* DeleteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCell.swift; sourceTree = "<group>"; };
+		8FC08AF629B5F8080011F3EC /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		8FC08AF829B5F94E0011F3EC /* ContactDetailsVCTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsVCTableView.swift; sourceTree = "<group>"; };
+		8FC08AFA29B614F80011F3EC /* AddContactDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactDelegate.swift; sourceTree = "<group>"; };
+		8FC08AFD29B61C060011F3EC /* SaveContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveContact.swift; sourceTree = "<group>"; };
 		8FC538F729B063CA005C250A /* ContactsAppTask_Kamaljeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsAppTask_Kamaljeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC538FA29B063CA005C250A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FC538FC29B063CA005C250A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +78,7 @@
 			children = (
 				8FC5394329B0B632005C250A /* AddContactVC.swift */,
 				8F3042BB29B5ADC800F8F970 /* AddContactVCTableVIew.swift */,
+				8FC08AFD29B61C060011F3EC /* SaveContact.swift */,
 			);
 			path = AddContactVC;
 			sourceTree = "<group>";
@@ -84,10 +93,19 @@
 			path = ConatactListVC;
 			sourceTree = "<group>";
 		};
+		8FC08AFC29B6151C0011F3EC /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				8FC08AFA29B614F80011F3EC /* AddContactDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		8FC2F88929B5BD700069FFD2 /* ContactDetailsVC */ = {
 			isa = PBXGroup;
 			children = (
 				8FC5391B29B07704005C250A /* ContactDetailsVC.swift */,
+				8FC08AF829B5F94E0011F3EC /* ContactDetailsVCTableView.swift */,
 			);
 			path = ContactDetailsVC;
 			sourceTree = "<group>";
@@ -114,6 +132,7 @@
 				8FC5391A29B0766D005C250A /* ContactMod & Data */,
 				8FC5391129B06A3B005C250A /* View Controllers */,
 				8FC5390E29B0690E005C250A /* Extensions */,
+				8FC08AFC29B6151C0011F3EC /* Delegates */,
 				8FC538FA29B063CA005C250A /* AppDelegate.swift */,
 				8FC538FC29B063CA005C250A /* SceneDelegate.swift */,
 				8FC5390029B063CA005C250A /* Main.storyboard */,
@@ -161,6 +180,7 @@
 				8FC5391229B06ADF005C250A /* ContactCell.swift */,
 				8FC5394529B0C067005C250A /* AddNumberCell.swift */,
 				8FBB71F229B2428E00483A3B /* DeleteCell.swift */,
+				8FC08AF629B5F8080011F3EC /* DetailCell.swift */,
 			);
 			path = "Table Cells";
 			sourceTree = "<group>";
@@ -238,6 +258,8 @@
 			files = (
 				8FC5391E29B079E2005C250A /* SortContacts.swift in Sources */,
 				8FC5391329B06ADF005C250A /* ContactCell.swift in Sources */,
+				8FC08AF929B5F94E0011F3EC /* ContactDetailsVCTableView.swift in Sources */,
+				8FC08AF729B5F8080011F3EC /* DetailCell.swift in Sources */,
 				8FBB71F129B1D8FC00483A3B /* SearchBar.swift in Sources */,
 				8FC538FF29B063CA005C250A /* ContactListVC.swift in Sources */,
 				8FC5391929B06E23005C250A /* ContactModel.swift in Sources */,
@@ -248,8 +270,10 @@
 				8FC5394429B0B632005C250A /* AddContactVC.swift in Sources */,
 				8FC5394629B0C067005C250A /* AddNumberCell.swift in Sources */,
 				8FBB71EF29B1D89500483A3B /* ContactListVCTableView.swift in Sources */,
+				8FC08AFE29B61C060011F3EC /* SaveContact.swift in Sources */,
 				8FC5391729B06DA4005C250A /* ContactMod.swift in Sources */,
 				8FC538FB29B063CA005C250A /* AppDelegate.swift in Sources */,
+				8FC08AFB29B614F80011F3EC /* AddContactDelegate.swift in Sources */,
 				8FC538FD29B063CA005C250A /* SceneDelegate.swift in Sources */,
 				8FBB71F329B2428E00483A3B /* DeleteCell.swift in Sources */,
 				8FC5391029B06929005C250A /* UITextField.swift in Sources */,

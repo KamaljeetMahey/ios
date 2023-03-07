@@ -18,7 +18,7 @@ class ContactListVC: UIViewController {
     var alertActions = AlertAction()
     var contactMod = ContactMod.contactMod
     var staticData = ContactStaticData()
-    var sortContacts = SortContacts()
+    var sortContacts = SortContacts.sortContacts
     let searchController = UISearchController()
     
     //MARK: Properties
@@ -61,20 +61,51 @@ class ContactListVC: UIViewController {
         tableView.reloadData()
         
     }
+    
+    
+    
+    
+    //MARK: Prepare Segue
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+        guard let vc = segue.destination as? ContactDetailsVC else {
+            return
+        }
+        vc.data = sender as? (Contact, IndexPath)
+        
+        
+    }
+    
 }
 
 
 
 
-//MARK: functions
+//MARK: Methods
     
-extension ContactListVC{
+extension ContactListVC:AddContactDelegate{
     
+    
+    // Navigation Add Button
     @objc func addButton(){
         
-        let vc = storyboard?.instantiateViewController(withIdentifier: "AddContactVC")
+        let vc = storyboard?.instantiateViewController(withIdentifier: "AddContactVC") as! AddContactVC
         
-        self.navigationController?.pushViewController(vc!, animated: true)
+        vc.addContactDelegate = self
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    
+    // Saving Contact using Delegate Pattern
+    func addContact(firstName first: String, lastName last: String, company: String, number: [String]) {
+        
+        
+        let contact = Contact(firstName: first, lastName: last, number: number, company: company)
+        contactMod.contactDataArray.insert(contact, at: 0)
         
     }
 }

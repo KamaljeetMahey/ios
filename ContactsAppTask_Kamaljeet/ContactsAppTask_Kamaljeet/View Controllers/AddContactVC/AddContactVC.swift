@@ -9,9 +9,16 @@ import UIKit
 
 class AddContactVC: UIViewController {
 
+    
     //MARK: Objects
+    
     var contactMod = ContactMod.contactMod
     var addNumberCell = AddNumberCell()
+    var sortContacts = SortContacts.sortContacts
+    var addContactDelegate:AddContactDelegate!
+    var contactDetailsVC = ContactDetailsVC()
+    var contactListVC = ContactListVC()
+    
     
     //MARK: Outlets
     
@@ -33,13 +40,21 @@ class AddContactVC: UIViewController {
     
     
     
+    
     //MARK: Properties
     var numOfRows = 1
     var addContactArr:[DeleteCell?] = [nil]
     var dataModel = [TextFieldModel]()
+    var data : (Contact,IndexPath)?
+    var Change = UIButton()
+    var ChangeLabel = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        checkForData()
+        
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveContact))
         
@@ -51,27 +66,34 @@ class AddContactVC: UIViewController {
         }
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         addTableView.reloadData()
     }
     
-    
-    @objc func saveContact(){
-        
-        
-        var company = companyNameTF.text
-        let number = ["1111111111"]
-        if company == ""{
-            company = "None"
+    //Check For Data (For Editing Mode)
+    func checkForData(){
+        if data != nil{
+            numOfRows += data?.0.number.count ?? 1
+   
         }
-        
-        contactMod.addContact(firstName: firstNameTF.text ?? "", lastName: lastNameTF.text ?? "", number: number, company: company!)
-        
-        if let navController = self.navigationController {
-            navController.popViewController(animated: true)
-        }
-
     }
+    
+    
+    
+    func getNumberArray() -> [String]{
+        var numbers: [String] = []
+        for cell in addContactArr{
+            if let number = cell?.addMobile.text{
+                if number != ""{
+                    numbers.append(number)
+                }
+            }
+        }
+        return numbers
+    }
+    
+    
     
 }
 

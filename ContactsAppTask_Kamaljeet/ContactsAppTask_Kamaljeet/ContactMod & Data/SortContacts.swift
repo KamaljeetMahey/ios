@@ -10,9 +10,11 @@ import Foundation
 class SortContacts{
  
     // MARK: Properties
+    static let sortContacts = SortContacts()
     var sectionTitles: [String] = []
     var sortedContactList: [String: [Contact]] = [:]
     
+    private init(){}
     
     // MARK: Methods
     func createSectionTitles(contactMod: ContactMod) {

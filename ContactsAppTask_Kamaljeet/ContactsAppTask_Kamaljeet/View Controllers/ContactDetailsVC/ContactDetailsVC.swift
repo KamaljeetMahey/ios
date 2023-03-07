@@ -17,8 +17,8 @@ class ContactDetailsVC: UIViewController {
     }
     
     @IBOutlet weak var contactTF: UITextField!
-    @IBOutlet weak var companyTF: UITextField!
-    @IBOutlet weak var numberTF: UITextField!
+    
+    
     @IBOutlet weak var msgButton: UIButton! {
         didSet{
             msgButton.backgroundColor = .white
@@ -43,11 +43,12 @@ class ContactDetailsVC: UIViewController {
         }
     }
     
+    @IBOutlet weak var detailTableView: UITableView!
     
     
     //MARK: Objects
     var contactMod = ContactMod.contactMod
-    var sortContacts = SortContacts()
+    var sortContacts = SortContacts.sortContacts
     var alertActions = AlertAction()
     var CLVC = ContactListVC()
     
@@ -61,6 +62,9 @@ class ContactDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        // Navigation Bar Items
         navigationItem
             .rightBarButtonItems =
         [
@@ -69,44 +73,62 @@ class ContactDetailsVC: UIViewController {
         ]
         
     }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
+        
         setDataValues()
+        detailTableView.reloadData()
+        
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let vc = segue.destination as! AddContactVC
+        
+        vc.data = self.data
+        vc.contactDetailsVC = self
+        
+    }
     
     // MARK: Functions
     
     func setDataValues() {
         
         contactTF.text = " \(data?.0.fullName ?? "")"
-        numberTF.text = data?.0.number[0]
-        companyTF.text = data?.0.company ?? ""
+        
         
     }
     
 
+    
     @objc func deleteContact() {
+        
         let alertController = alertActions.deleteContactAlert()
         alertController.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: {
             UIAlertAction in
+            
             self.contactMod.deleteContact(indexPath: self.data!.1)
+            self.sortContacts.sectionTitles.remove(at: self.data!.1.section)
             
             self.navigationController?.popViewController(animated: true)
-        }
-        )
+            
+            }
+          )
         )
         
         present(alertController, animated: true)
         
     }
     
+    
+    
     @objc func updateContact(){
         
-        let vc = storyboard?.instantiateViewController(withIdentifier: "AddContactVC")
+        performSegue(withIdentifier: "ToEditContact", sender: nil) 
         
-        self.navigationController?.pushViewController(vc!, animated: true)
+            
         
     }
 }
-//self.sortContacts.sectionTitles.remove(at: self.data!.1.section)
+
