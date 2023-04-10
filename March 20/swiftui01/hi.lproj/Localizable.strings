@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  swiftui01
+
+  Created by Paras  on 28/03/23.
+  
+*/
+"Login-Title" = "लॉग इन";
+"SwiftUI-Sample-Project" = "
+स्विफ्टयूआई नमूना परियोजना";
+"username-tf" = "उपयोगकर्ता नाम";
+"password-tf" = "पासवर्ड";
+"Forgot-password" = "पासवर्ड भूल गए";
+

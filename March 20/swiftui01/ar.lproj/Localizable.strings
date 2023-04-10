@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  swiftui01
+
+  Created by Paras  on 28/03/23.
+  
+*/
+"Login-Title" = "تسجيل الدخول";
+"SwiftUI-Sample-Project" = "مشروع نموذج SwiftUI";
+"username-tf" = "اسم المستخدم";
+"password-tf" = "كلمة المرور";
+"Forgot-password" = "هل نسيت كلمة السر";
