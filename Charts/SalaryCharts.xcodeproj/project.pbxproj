@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F904EA229D6B36B00AC8A09 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F904EA129D6B36A00AC8A09 /* UIColor.swift */; };
+		8F904EA729D6C1BB00AC8A09 /* TapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F904EA629D6C1BB00AC8A09 /* TapCell.swift */; };
+		8F904EA929D6C80000AC8A09 /* VCTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F904EA829D6C80000AC8A09 /* VCTableViewExtension.swift */; };
+		8F904EAB29D6CF7300AC8A09 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F904EAA29D6CF7300AC8A09 /* DetailCell.swift */; };
+		8F904EB629D6FAE000AC8A09 /* BaloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F904EB529D6FAE000AC8A09 /* BaloonMarker.swift */; };
+		8FA7FB1029DAD76B00B0B53E /* Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7FB0F29DAD76B00B0B53E /* Calculations.swift */; };
+		8FA7FB1229DAE0A900B0B53E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7FB1129DAE0A900B0B53E /* String.swift */; };
+		8FA7FB1429DAEE7B00B0B53E /* SetBarDynamicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7FB1329DAEE7B00B0B53E /* SetBarDynamicData.swift */; };
+		8FEF441B29D55BA60023DC46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEF441A29D55BA60023DC46 /* AppDelegate.swift */; };
+		8FEF441D29D55BA60023DC46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEF441C29D55BA60023DC46 /* SceneDelegate.swift */; };
+		8FEF441F29D55BA60023DC46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEF441E29D55BA60023DC46 /* ViewController.swift */; };
+		8FEF442229D55BA60023DC46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FEF442029D55BA60023DC46 /* Main.storyboard */; };
+		8FEF442429D55BA80023DC46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FEF442329D55BA80023DC46 /* Assets.xcassets */; };
+		8FEF442729D55BA80023DC46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FEF442529D55BA80023DC46 /* LaunchScreen.storyboard */; };
+		8FEF442E29D56DDC0023DC46 /* Pods_SalaryCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021FE8233671EF86B3237F90 /* Pods_SalaryCharts.framework */; };
+		8FEF443229D56E170023DC46 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEF443129D56E170023DC46 /* Charts.framework */; };
+		8FEF443529D570150023DC46 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEF443429D570150023DC46 /* TinyConstraints.framework */; };
+		8FEF443829D571450023DC46 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEF443729D571450023DC46 /* Model.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		021FE8233671EF86B3237F90 /* Pods_SalaryCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalaryCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13222A9F9D32DF628AB064A5 /* Pods-SalaryCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalaryCharts.release.xcconfig"; path = "Target Support Files/Pods-SalaryCharts/Pods-SalaryCharts.release.xcconfig"; sourceTree = "<group>"; };
+		39FBD77D09D3004E0F0E8A6A /* Pods-SalaryCharts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalaryCharts.debug.xcconfig"; path = "Target Support Files/Pods-SalaryCharts/Pods-SalaryCharts.debug.xcconfig"; sourceTree = "<group>"; };
+		8F904EA129D6B36A00AC8A09 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		8F904EA629D6C1BB00AC8A09 /* TapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCell.swift; sourceTree = "<group>"; };
+		8F904EA829D6C80000AC8A09 /* VCTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTableViewExtension.swift; sourceTree = "<group>"; };
+		8F904EAA29D6CF7300AC8A09 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		8F904EB529D6FAE000AC8A09 /* BaloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaloonMarker.swift; sourceTree = "<group>"; };
+		8FA7FB0F29DAD76B00B0B53E /* Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculations.swift; sourceTree = "<group>"; };
+		8FA7FB1129DAE0A900B0B53E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		8FA7FB1329DAEE7B00B0B53E /* SetBarDynamicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetBarDynamicData.swift; sourceTree = "<group>"; };
+		8FEF441729D55BA60023DC46 /* SalaryCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalaryCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FEF441A29D55BA60023DC46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FEF441C29D55BA60023DC46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8FEF441E29D55BA60023DC46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FEF442129D55BA60023DC46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FEF442329D55BA80023DC46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FEF442629D55BA80023DC46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FEF442829D55BA80023DC46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FEF443129D56E170023DC46 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FEF443429D570150023DC46 /* TinyConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TinyConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FEF443729D571450023DC46 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FEF441429D55BA60023DC46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEF443529D570150023DC46 /* TinyConstraints.framework in Frameworks */,
+				8FEF442E29D56DDC0023DC46 /* Pods_SalaryCharts.framework in Frameworks */,
+				8FEF443229D56E170023DC46 /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D14314E0C06443E2FD43B33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39FBD77D09D3004E0F0E8A6A /* Pods-SalaryCharts.debug.xcconfig */,
+				13222A9F9D32DF628AB064A5 /* Pods-SalaryCharts.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8F904EA029D6B35800AC8A09 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8F904EA129D6B36A00AC8A09 /* UIColor.swift */,
+				8F904EB529D6FAE000AC8A09 /* BaloonMarker.swift */,
+				8FA7FB0F29DAD76B00B0B53E /* Calculations.swift */,
+				8FA7FB1129DAE0A900B0B53E /* String.swift */,
+				8FA7FB1329DAEE7B00B0B53E /* SetBarDynamicData.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8F904EA329D6C15600AC8A09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8FEF441E29D55BA60023DC46 /* ViewController.swift */,
+				8F904EA829D6C80000AC8A09 /* VCTableViewExtension.swift */,
+				8F904EAC29D6DE1000AC8A09 /* cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8F904EAC29D6DE1000AC8A09 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				8F904EA629D6C1BB00AC8A09 /* TapCell.swift */,
+				8F904EAA29D6CF7300AC8A09 /* DetailCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		8FEF440E29D55BA60023DC46 = {
+			isa = PBXGroup;
+			children = (
+				8FEF441929D55BA60023DC46 /* SalaryCharts */,
+				8FEF441829D55BA60023DC46 /* Products */,
+				7D14314E0C06443E2FD43B33 /* Pods */,
+				ADDAE30698A568F6D315CAD1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8FEF441829D55BA60023DC46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FEF441729D55BA60023DC46 /* SalaryCharts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FEF441929D55BA60023DC46 /* SalaryCharts */ = {
+			isa = PBXGroup;
+			children = (
+				8FEF441A29D55BA60023DC46 /* AppDelegate.swift */,
+				8FEF441C29D55BA60023DC46 /* SceneDelegate.swift */,
+				8FEF442029D55BA60023DC46 /* Main.storyboard */,
+				8FEF443729D571450023DC46 /* Model.swift */,
+				8F904EA329D6C15600AC8A09 /* Views */,
+				8F904EA029D6B35800AC8A09 /* Utilities */,
+				8FEF442329D55BA80023DC46 /* Assets.xcassets */,
+				8FEF442529D55BA80023DC46 /* LaunchScreen.storyboard */,
+				8FEF442829D55BA80023DC46 /* Info.plist */,
+			);
+			path = SalaryCharts;
+			sourceTree = "<group>";
+		};
+		ADDAE30698A568F6D315CAD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FEF443429D570150023DC46 /* TinyConstraints.framework */,
+				8FEF443129D56E170023DC46 /* Charts.framework */,
+				021FE8233671EF86B3237F90 /* Pods_SalaryCharts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FEF441629D55BA60023DC46 /* SalaryCharts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FEF442B29D55BA80023DC46 /* Build configuration list for PBXNativeTarget "SalaryCharts" */;
+			buildPhases = (
+				4FB9EAFFF06D060C059321B8 /* [CP] Check Pods Manifest.lock */,
+				8FEF441329D55BA60023DC46 /* Sources */,
+				8FEF441429D55BA60023DC46 /* Frameworks */,
+				8FEF441529D55BA60023DC46 /* Resources */,
+				0F462254D5A360CC39D658BE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalaryCharts;
+			productName = SalaryCharts;
+			productReference = 8FEF441729D55BA60023DC46 /* SalaryCharts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FEF440F29D55BA60023DC46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					8FEF441629D55BA60023DC46 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 8FEF441229D55BA60023DC46 /* Build configuration list for PBXProject "SalaryCharts" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FEF440E29D55BA60023DC46;
+			productRefGroup = 8FEF441829D55BA60023DC46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FEF441629D55BA60023DC46 /* SalaryCharts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FEF441529D55BA60023DC46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEF442729D55BA80023DC46 /* LaunchScreen.storyboard in Resources */,
+				8FEF442429D55BA80023DC46 /* Assets.xcassets in Resources */,
+				8FEF442229D55BA60023DC46 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F462254D5A360CC39D658BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SalaryCharts/Pods-SalaryCharts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SalaryCharts/Pods-SalaryCharts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SalaryCharts/Pods-SalaryCharts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FB9EAFFF06D060C059321B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SalaryCharts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FEF441329D55BA60023DC46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEF441F29D55BA60023DC46 /* ViewController.swift in Sources */,
+				8FA7FB1229DAE0A900B0B53E /* String.swift in Sources */,
+				8FEF443829D571450023DC46 /* Model.swift in Sources */,
+				8FEF441B29D55BA60023DC46 /* AppDelegate.swift in Sources */,
+				8FA7FB1029DAD76B00B0B53E /* Calculations.swift in Sources */,
+				8F904EA929D6C80000AC8A09 /* VCTableViewExtension.swift in Sources */,
+				8F904EA729D6C1BB00AC8A09 /* TapCell.swift in Sources */,
+				8FEF441D29D55BA60023DC46 /* SceneDelegate.swift in Sources */,
+				8F904EB629D6FAE000AC8A09 /* BaloonMarker.swift in Sources */,
+				8F904EAB29D6CF7300AC8A09 /* DetailCell.swift in Sources */,
+				8FA7FB1429DAEE7B00B0B53E /* SetBarDynamicData.swift in Sources */,
+				8F904EA229D6B36B00AC8A09 /* UIColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8FEF442029D55BA60023DC46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FEF442129D55BA60023DC46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FEF442529D55BA80023DC46 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FEF442629D55BA80023DC46 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FEF442929D55BA80023DC46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FEF442A29D55BA80023DC46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FEF442C29D55BA80023DC46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39FBD77D09D3004E0F0E8A6A /* Pods-SalaryCharts.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SalaryCharts/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cm.SalaryCharts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FEF442D29D55BA80023DC46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13222A9F9D32DF628AB064A5 /* Pods-SalaryCharts.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SalaryCharts/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cm.SalaryCharts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FEF441229D55BA60023DC46 /* Build configuration list for PBXProject "SalaryCharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FEF442929D55BA80023DC46 /* Debug */,
+				8FEF442A29D55BA80023DC46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FEF442B29D55BA80023DC46 /* Build configuration list for PBXNativeTarget "SalaryCharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FEF442C29D55BA80023DC46 /* Debug */,
+				8FEF442D29D55BA80023DC46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FEF440F29D55BA60023DC46 /* Project object */;
+}
