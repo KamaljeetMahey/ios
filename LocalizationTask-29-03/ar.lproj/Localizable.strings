@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  LocalizationTask-29-03
+
+  Created by Paras  on 29/03/23.
+  
+*/
+"Setting-Language" = "عربي";
+"Menu-Label" = "قائمة طعام";
+
+
+"First-Name-Label" = "الاسم الأول*";
+"Last-Name-Label" = "اسم العائلة*";
+"Enter-Name-Placeholder" = "أدخل الاسم";
+"DOB-Label" = "تاريخ الميلاد*";
+"Select-Placeholder" = "يختار";
+"Minimum-Age-Label" = "الحد الأدنى للسن المسموح به هو 18 عامًا";
+"Gender-Label" = "جنس*";
+"Gender-Male" = "ذكر";
+"Gender-Female" = "أنثى";
+"Gender-Other" = "آخر";
+"Prefer-Not-To-Say" = "Prefer Not To Say";
+"Hide-Weight-Label" = "إخفاء وزني عن الأعضاء الآخرين";
+"Height-Label" = "ارتفاع*";
+"Log-Weight-Label" = "سيُطلب منك تسجيل وزنك بمجرد بدء التحدي";
+"Apple-Health-Label" = "صحة التفاح";
+"Step-Floor-Glasses" = "درجات ، أرضيات ، نظارات";
+"Fitbit-Label" = "فيتبيت";
+"Sync-Info-Label" = "يتم تنشيط المزامنة في كل مرة تدخل فيها إلى التطبيق. يوصى بالدخول في نهاية اليوم لتسجيل إنجازات اليوم الكامل";
+"Wellness-Tips" = "النوافذ المنبثقة للنصائح اليومية للعافية";
+"Daily-Tips-Label" = "نصائح يومية";
+"Pop-Settings-Label" = "إعدادات البوب";
+"Sync-Better-Label" = "المزامنة بشكل أفضل مع";
+"Save-Button-Label" = "يحفظ";
+
+"cm-label" = "سنتيمتر";
+"inch-label" = "بوص";

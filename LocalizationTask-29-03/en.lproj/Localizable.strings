@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  LocalizationTask-29-03
+
+  Created by Paras  on 29/03/23.
+  
+*/
+
+"Setting-Language" = "English";
+"Menu-Label" = "Menu";
+
+"First-Name-Label" = "First Name*";
+"Last-Name-Label" = "Last Name*";
+"Enter-Name-Placeholder" = "Enter Name";
+"DOB-Label" = "Date of Birth*";
+"Select-Placeholder" = "Select";
+"Minimum-Age-Label" = "Minimum age allowed is 18 years old";
+"Gender-Label" = "Gender*";
+"Gender-Male" = "Male";
+"Gender-Female" = "Female";
+"Gender-Other" = "Other";
+"Prefer-Not-To-Say" = "Prefer Not To Say";
+"Hide-Weight-Label" = "Hide my weight from other members";
+"Height-Label" = "Height*";
+"Log-Weight-Label" = "You will be asked to log your weight as soon as your challenge is started";
+"Apple-Health-Label" = "Apple Health";
+"Step-Floor-Glasses" = "Steps, Floors, Glasses";
+"Fitbit-Label" = "Fitbit";
+"Sync-Info-Label" = "The sync is activated every time that you enter the app. It is recommended to enter at the end of the day to record the full day achievements";
+"Wellness-Tips" = "Wellness daily tips pop-ups";
+"Daily-Tips-Label" = "Daily Tips";
+"Pop-Settings-Label" = "Pop Settings";
+"Sync-Better-Label" = "Sync Better Together With";
+"Save-Button-Label" = "Save";
+
+"cm-label" = "cm";
+"inch-label" = "inch";
+

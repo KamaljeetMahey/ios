@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  LocalizationTask-29-03
+
+  Created by Paras  on 29/03/23.
+  
+*/
+"Setting-Language" = "हिंदी";
+"Menu-Label" = "मेन्यू";
+
+
+"First-Name-Label" = "पहला नाम*";
+"Last-Name-Label" = "उपनाम*";
+"Enter-Name-Placeholder" = "नाम दर्ज करें";
+"DOB-Label" = "जन्म की तारीख*";
+"Select-Placeholder" = "चुनना";
+"Minimum-Age-Label" = "न्यूनतम आयु 18 वर्ष है";
+"Gender-Label" = "लिंग*";
+"Gender-Male" = "नर";
+"Gender-Female" = "महिला";
+"Gender-Other" = "अन्य";
+"Prefer-Not-To-Say" = "Prefer Not To Say";
+"Hide-Weight-Label" = "मेरा वजन अन्य सदस्यों से छुपाएं";
+"Height-Label" = "ऊंचाई*";
+"Log-Weight-Label" = "आपकी चुनौती शुरू होते ही आपको अपना वजन दर्ज करने के लिए कहा जाएगा";
+"Apple-Health-Label" = "सेब स्वास्थ्य";
+"Step-Floor-Glasses" = "कदम, फर्श, चश्मा";
+"Fitbit-Label" = "फिटबिट";
+"Sync-Info-Label" = "हर बार जब आप ऐप में प्रवेश करते हैं तो सिंक सक्रिय हो जाता है। पूरे दिन की उपलब्धियों को रिकॉर्ड करने के लिए दिन के अंत में प्रवेश करने की सिफारिश की जाती है";
+"Wellness-Tips" = "तंदुरुस्ती दैनिक सुझाव पॉप-अप";
+"Daily-Tips-Label" = "दैनिक सुझाव";
+"Pop-Settings-Label" = "पॉप सेटिंग्स";
+"Sync-Better-Label" = "साथ में बेहतर सिंक करें";
+"Save-Button-Label" = "बचाना";
+
+"cm-label" = "सेंटीमीटर";
+"inch-label" = "इंच";
+
